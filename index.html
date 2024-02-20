@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgb(222, 213, 213);
+        }
+
+        .cover-page {
+            text-align: center;
+            color: #fff;
+        }
+
+        .glow-text {
+            font-size: 3em;
+            font-family: 'Arial', sans-serif;
+            letter-spacing: 10px; /* Jarak antar huruf */
+        }
+
+        .glow-text span {
+            color: #fff; /* Warna teks */
+            animation: glow 2s ease-in-out infinite alternate;
+            display: inline-block;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px rgb(108, 222, 242), 0 0 20px rgb(108, 222, 242), 0 0 30px rgb(108, 222, 242);
+            }
+            to {
+                text-shadow: 0 0 20px rgb(108, 222, 242), 0 0 30px rgb(108, 222, 242), 0 0 40px rgb(108, 222, 242);
+            }
+        }
+        h2 {
+        font-size: 2em;
+        color: #fff; /* Warna teks */
+        text-shadow: 0 0 10px #e8bae8, 0 0 20px #e8bae8, 0 0 30px #e8bae8; /* Bayangan teks dengan warna pink */
+        animation: glowH2 2s ease-in-out infinite alternate;
+        margin-top: 20px; /* Jarak atas dari elemen sebelumnya */
+    }
+
+    @keyframes glowH2 {
+        from {
+            text-shadow: 0 0 10px #e8bae8, 0 0 20px #e8bae8, 0 0 30px #e8bae8;
+        }
+        to {
+            text-shadow: 0 0 20px #e8bae8, 0 0 30px #e8bae8, 0 0 40px #e8bae8;
+        }
+    }
+    .love-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1.5em;
+            text-decoration: none;
+            background-color: #ff0055; /* Warna latar belakang */
+            color: #fff; /* Warna teks */
+            border: none;
+            border-radius: 50px; /* Border radius untuk membuat bentuk hati */
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .love-button:hover {
+            background-color: #ff0077; /* Warna latar belakang saat dihover */
+        }
+    </style>
+    <title>Cover Page</title>
+</head>
+<body>
+    <div class="cover-page">
+        <h1 class="glow-text">
+            <span>E</span>
+            <span>V</span>
+            <span>I</span>
+            <span>T</span>
+            <span>A</span>
+            <span> </span>
+            <span>M</span>
+            <span>E</span>
+            <span>I</span>
+            <span>L</span>
+            <span>I</span>
+            <span>A</span>
+            <span>N</span>
+            <span>A</span>
+        </h1>
+        <h2>Happy Valentine's Day!</h2>
+        <a href="flower.html" class="love-button">❤</a>
+    </div>
+</body>
+</html>
